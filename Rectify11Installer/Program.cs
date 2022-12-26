@@ -1,4 +1,5 @@
-﻿using Rectify11Installer.Core;
+﻿using KPreisser.UI;
+using Rectify11Installer.Core;
 using Rectify11Installer.Win32;
 using System;
 using System.Globalization;
@@ -15,8 +16,22 @@ namespace Rectify11Installer
 		/// The main entry point for the application.
 		/// </summary>
 		[STAThread]
-		private static void Main()
+		private static void Main(string[] args)
 		{
+			if (Environment.OSVersion.Version.Build < 21343)
+			{
+				if (args.Length != 0 && args[0].ToLower() == "--allow")
+				{ }
+				else
+				{
+					TaskDialog.Show(text: "You must be running Windows 10 build 21343 in order to install Rectify11.",
+					instruction: "Compatibility Error",
+					title: "Rectify11 Setup",
+					buttons: TaskDialogButtons.OK,
+					icon: TaskDialogStandardIcon.SecurityErrorRedBar);
+					return;
+				}
+			}
 			ProfileOptimization.SetProfileRoot(Path.Combine(Path.GetTempPath(), "Rectify11"));
 			ProfileOptimization.StartProfile("Startup.Profile");
 			if (Environment.OSVersion.Version.Build >= 10240)
