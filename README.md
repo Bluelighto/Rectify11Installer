@@ -1,17 +1,8 @@
 ![SkibidiDopDopDopDopYesYesYesYes11](https://user-images.githubusercontent.com/63112005/209448992-48f43baa-d97b-494a-aa65-e429481ee9f7.png)
 # SkibidiDopDopDopDopYesYesYesYes11Installer
-SkibidiDopDopDopDopYesYesYesYes11 installer source code. Based on Rectify11 installer. Note: in beta (rp3), also images aren't correct but I have no idea how to fix that. 
+## ⚠️ Important!
+This is no longer maintained, FAR from maintained. This also has a connection to Skbidi Toilet, which is not the reason why I made this shit in the first place.
 
-Original: https://github.com/MishaTY/Rectify11Installer
+Original: https://github.com/Rectify11/Installer
 
-Discord community: https://discord.gg/rectify11-development-hub-972654790536482896
-
-# Projects used
- - [Resource Hacker](http://www.angusj.com/resourcehacker/) for replacing resources in files
- - [Libmsstyle](https://github.com/nptr/msstyleEditor) for rendering controls from rectify msstyles.
- - [UltraUXThemePatcher](https://mhoefs.eu/software_uxtheme.php) for uxtheme patching.
- - [MicaForEveryone](https://github.com/MicaForEveryone/MicaForEveryone) for applying mica backdrop to apps.
- - [Winver](https://github.com/rounk-ctrl/Winver) for modern winver.
- - [AccentColorizer](https://github.com/krlvm/AccentColorizer) for colorizing win32 controls.
- - [7-zip](https://7-zip.org/) for efficient compression and decompression.
- - [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher) for various shell improvements.
+Discord community: https://discord.gg/rectify11-community-1077324213142175744
